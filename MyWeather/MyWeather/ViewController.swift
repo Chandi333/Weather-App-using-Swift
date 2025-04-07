@@ -65,7 +65,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let long = currentLocation.coordinate.longitude
         let lat = currentLocation.coordinate.latitude
 
-        let url = "https://api.pirateweather.net/forecast/mSRxEUDagEc8sYkFZrySX3XJO7PvbEAz/\(lat),\(long)?exclude=[flags,minutely]"
+        let url = "PUY YOUR API KEY HERE USING LATITUDE AND LONGITUDE \(lat),\(long)"
         
         URLSession.shared.dataTask(with: URL(string: url)!, completionHandler: { data, response, error in
 
